@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Timestamp Microservice</title>
+      <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+    <h1>Timestamp Microservice</h1>
+    <hr />
+    <div>
+      <p>Digite o 'UNIX' ou o 'UTC' que deseja converter:</p>
+      <input id="inputDate" class="input" placeholder="Ex: 'Fri, 25 Dec 2015 00:00:00 GMT'">
+      <button id="buttonDate" >Converter</button>
+      <div id="resultado"></div>
+    </div>
+    <div>
+      <p>Fuso Horário</p>
+      <select id="fuso">
+        <option value="0">0</option>
+        <option value="-12">-12</option>
+        <option value="-11">-11</option>
+        <option value="-10">-10</option>
+        <option value="-9">-9</option>
+        <option value="-8">-8</option>
+        <option value="-7">-7</option>
+        <option value="-6">-6</option>
+        <option value="-5">-5</option>
+        <option value="-4">-4</option>
+        <option value="-3">-3</option>
+        <option value="-2">-2</option>
+        <option value="-1">-1</option>
+        <option value="0">0</option>
+        <option value="+1">+1</option>
+        <option value="+2">+2</option>
+        <option value="+3">+3</option>
+        <option value="+4">+4</option>
+        <option value="+5">+5</option>
+        <option value="+6">+6</option>
+        <option value="+7">+7</option>
+        <option value="+8">+8</option>
+        <option value="+9">+9</option>
+        <option value="+10">+10</option>
+        <option value="+11">+11</option>
+        <option value="+12">+12</option>
+      </select>
+      <button id="buttonFuso"></button>      
+    </div>
+    <div class="container">
+      <h2>Example Output:</h2>
+      <p>
+        <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
+      </p>
+    </div>
+    <div class="footer">
+      <p>
+        BlaBlaBla BléBléBlé BluBluBlu
+      </p>
+    </div>
+  </body>
+  <script defer async src="/index.js"></script>
+</html>

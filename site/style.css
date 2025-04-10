@@ -45,12 +45,13 @@ a {
 	color: #2574A9;
 }
 
-#input {
-	width: 30%;
+#inputDate {
+	width: 15%;
 }
 
-#button{
+button {
 	width: 6rem;
 	height: 1.5rem;
 	background-color: greenyellow;
+	cursor: pointer;
 }

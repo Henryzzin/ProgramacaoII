@@ -18,7 +18,7 @@
       <div id="resultado"></div>
     </div>
     <div>
-      <p>Fuso Horário</p>
+      <p>Fuso Horário:</p>
       <select id="fuso">
         <option value="0">0</option>
         <option value="-12">-12</option>
@@ -47,7 +47,7 @@
         <option value="+11">+11</option>
         <option value="+12">+12</option>
       </select>
-      <button id="buttonFuso"></button>      
+      <button id="buttonFuso">Converter</button>      
     </div>
     <div class="container">
       <h2>Example Output:</h2>
@@ -55,11 +55,14 @@
         <code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code>
       </p>
     </div>
-    <div class="footer">
-      <p>
-        BlaBlaBla BléBléBlé BluBluBlu
-      </p>
+    <h2>Diferença de Datas:</h2>
+    <div class="dateDif">
+      Primeira Data<input type="date" id="dateOne" placeholder="Ex:18/12/2007...">
+      Segunda Data<input type="date" id="dateTwo" placeholder="Ex:23/03/2008...">
+      <button id="differenceButton">Calcular</button>
     </div>
+    <h3>Resultado:</h3>
+    <p id="diffResult"></p>
   </body>
   <script defer async src="/index.js"></script>
 </html>
